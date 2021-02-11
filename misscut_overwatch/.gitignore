@@ -1,3 +1,5 @@
 text_files/*
 results/*
 db.sqlite3
+.DS_Store
+.idea/**
