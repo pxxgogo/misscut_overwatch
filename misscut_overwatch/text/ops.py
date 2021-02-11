@@ -13,6 +13,8 @@ def split_text(text: str):
         if len(current_para) > SOFT_MAX_LENGTH:
             merged_paras.append(current_para)
             current_para = ""
+    if len(current_para) > 0:
+        merged_paras.append(current_para)
     return merged_paras
 
 
