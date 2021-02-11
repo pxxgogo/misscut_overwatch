@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link href="/static/css/checking.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+{% block navItem %}
+    <li class="nav-item">
+        <a class="nav-link" href="/">
+            <i class="fas fa-fw fa-seedling"></i>
+            <span>录入界面</span></a>
+    </li>
+
+{% endblock %}
+
+{% block content %}
+    <!-- Main Content -->
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <div class="mb-0">MissCut中文校对系统</div>
+    </nav>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+        <div style="display: none" id="username">{{ username }}</div>
+        <div class="row">
+            <!-- Area Chart -->
+            <div class="offset-2 col-xl-8">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">范文</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <div class="chart-area" id="template-panel">
+                            “孩子在广州打工，过去打电话信号老中断。现在好了，不仅通话质量好了，还能跟孩子视频，很方便。”说起通信网络带来的变化，贵州省威宁彝族回族苗族自治县草海镇中海社区脱贫户管金兰很兴奋，“不上工的时候，在家里一边织毛线拖鞋一边跟孩子视频聊天，过去哪里想得到噢！”
+                            <br>
+                            感受到生活便利的不只是贵州的脱贫乡亲们。现代通信走入脱贫地区的一户户家庭，通信网络覆盖广度不断延伸。数据显示，2015年以来，中央财政和基础电信企业累计投入600多亿元，支持4.3万个脱贫村光纤网络建设和9200余个脱贫村4G基站建设，脱贫村通宽带比例超过98%。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Area Chart -->
+            <div class="offset-2 col-xl-8">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">输入框</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <div class="chart-area">
+                            <div id="input-panel" class="scroll-panel input-panel" contenteditable="true"
+                                 spellcheck="false" onpaste="paste_text(event)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 btn-panel">
+                <button id="submit-btn" class="btn btn-primary btn-icon-split btn-sm submit-btn mb-4">
+                    <span class="text">下一篇</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+{% endblock %}
+
+
+{% block script %}
+    <script src="/static/js/bs-custom-file-input.min.js"></script>
+    <script src="/static/js/checking.js"></script>
+
+{% endblock %}
+

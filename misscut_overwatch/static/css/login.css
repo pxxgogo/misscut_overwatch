@@ -1,0 +1,25 @@
+.content-panel {
+    padding-top: 100pt;
+    height: 350pt;
+    text-align: center;
+}
+
+.btn-panel {
+    margin: 20pt;
+}
+
+.bg-image-success {
+    background: url(/static/img/success.jpeg);
+    background-position: center;
+    background-size: cover
+}
+
+.bg-image-failure {
+    background: url(/static/img/failure.jpeg);
+    background-position: center;
+    background-size: cover
+}
+
+.btn {
+    width: 100%;
+}

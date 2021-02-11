@@ -1,0 +1,30 @@
+.custom-file-label {
+
+}
+
+.card-header {
+    background-color: inherit;
+    padding-top: 2vh;
+}
+
+.form-control {
+    font-size: inherit;
+}
+
+.input-panel {
+    height: 100%;
+}
+
+.submit-btn {
+
+}
+
+.btn-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.input-panel {
+    height: 800px;
+}

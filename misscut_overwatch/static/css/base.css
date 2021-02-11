@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+    font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6e707e;
+    text-align: left;
+    background-color: #fff;
+}
+
+h6 {
+    font-size: 2vh;
+}
+
+.container-fluid {
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.navbar {
+    padding: 2vh 2vw;
+}
+
+.canvas-0 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.canvas-1 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 1vh 0;
+}
+
+.canvas-2 {
+    width: 25%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.scroll-panel {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding-right: 1vw;
+}
+
+/* 设置滚动条的样式 */
+.scroll-panel::-webkit-scrollbar {
+    width: 0.25vw;
+    background-color: white;
+}
+
+/* 滚动槽 */
+.scroll-panel::-webkit-scrollbar-track {
+    border-radius: 0.25vw;
+}
+
+/* 滚动条滑块 */
+.scroll-panel::-webkit-scrollbar-thumb {
+    border-radius: 0.25vw;
+    background: #c5c7ce;
+}
+
+.btn {
+    width: 6vw;
+    font-size: 1vw;
+    margin-top: 1vh;
+    align-self: center;
+}
+
+.sticky-footer .copyright {
+    font-size: 0.5vw;
+}
+
+footer.sticky-footer {
+    padding: 3vh 0;
+}
+
+.topbar {
+    height: 7vh;
+    margin-bottom: 2vh;
+    font-size: 2vh;
+}
+
+.card-header {
+    padding: 2vh 1vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 2vh 1vw 0 1vw;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        width: 14vw !important;
+    }
+
+    .sidebar .nav-item .nav-link span {
+        font-size: .85vw;
+    }
+
+    .sidebar .sidebar-brand .sidebar-brand-icon i {
+        font-size: 1.5vw;
+    }
+
+    .sidebar .sidebar-brand {
+        font-size: 0.8vw;
+    }
+
+    .sidebar .sidebar-brand-text {
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .sidebar .nav-item .nav-link {
+        padding: 2vh 1vw;
+    }
+}
+
+.sidebar .sidebar-brand {
+    height: 4.375vw;
+}
+
+
+.sidebar .nav-item .collapse .collapse-inner .collapse-item, .sidebar .nav-item .collapsing .collapse-inner .collapse-item {
+    white-space: normal;
+    word-break: break-all;
+}
+
+#mistake-type-btns-panel {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-btn {
+    width: auto;
+    color: white;
+    background-color: #4e73df;
+    border-color: #4e73df;
+    font-size: 0.8vw;
+    padding: 0.8vh 0.8vw;
+    margin: 1vh 1vw;
+}
+
+.submit-btn {
+    width: 6vw;
+}
+
+.sidebar .nav-item .collapse .collapse-inner, .sidebar .nav-item .collapsing .collapse-inner {
+    min-width: inherit;
+    font-size: 0.7vw;
+}
+
+.less-mistakes-btn {
+    background-color: rgb(246, 181, 49);;
+    border-color: rgb(246, 181, 49);;
+}

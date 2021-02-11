@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block link %}
+    <link href="/static/css/upload_template.css" rel="stylesheet" type="text/css">
+{% endblock %}
+
+
+{% block navItem %}
+    <li class="nav-item">
+        <a class="nav-link" href="/upload_template_view">
+            <i class="fas fa-fw fa-seedling"></i>
+            <span>上传范文</span></a>
+    </li>
+
+{% endblock %}
+
+{% block content %}
+    <!-- Main Content -->
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+        <div class="mb-0">MissCut中文校对系统</div>
+    </nav>
+    <!-- End of Topbar -->
+
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+        <div class="row container-row">
+            <!-- Area Chart -->
+            <div class="offset-2 col-xl-8">
+                <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">输入框</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                        <div id="input-panel" class="scroll-panel input-panel" contenteditable="true"
+                             spellcheck="false">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-2 btn-panel">
+                <button id="submit-btn" class="btn btn-primary btn-icon-split btn-sm submit-btn mb-4">
+                    <span class="text">提交</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+{% endblock %}
+
+
+{% block script %}
+    <script src="/static/js/bs-custom-file-input.min.js"></script>
+    <script src="/static/js/upload_template.js"></script>
+
+{% endblock %}
+
